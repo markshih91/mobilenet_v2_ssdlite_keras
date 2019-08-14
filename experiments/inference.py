@@ -42,7 +42,7 @@ model = mobilenet_v2_ssd(image_size, n_classes, mode, l2_regularization, min_sca
                          nms_max_output_size, return_predictor_sizes)
 
 # 2: Load the trained weights into the model.
-weights_path = '../pretrained_weights/ssdseg_coco_34_loss-4.8741_val_loss-4.2302.h5'
+weights_path = '../pretrained_weights/ssdlite_coco_loss-4.8205_val_loss-4.1873.h5'
 model.load_weights(weights_path, by_name=True)
 
 # 3: Compile the model so that Keras won't complain the next time you load it.
@@ -54,7 +54,7 @@ orig_images = [] # Store the images here.
 input_images = [] # Store resized versions of the images here.
 
 # We'll only load one image in this example.
-img_path = '../experiments/imgs/4.jpg'
+img_path = '../experiments/imgs/000004.jpg'
 
 orig_images.append(imread(img_path))
 img = image.load_img(img_path, target_size=(image_size[0], image_size[1]))

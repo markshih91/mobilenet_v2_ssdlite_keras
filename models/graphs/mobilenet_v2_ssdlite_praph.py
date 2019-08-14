@@ -171,11 +171,10 @@ def mobilenet_v2_ssdlite(input_image):
 
     link4 = x = _followed_down_sample_block(x, 128, 256, 4)
 
-    x = _followed_down_sample_block(x, 128, 256, 5)
+    link5 = x = _followed_down_sample_block(x, 128, 256, 5)
 
-    link5 = x = _followed_down_sample_block(x, 64, 128, 6)
+    link6 = x = _followed_down_sample_block(x, 64, 128, 6)
 
-    links = [link1, link2, link3, link4, link5]
+    links = [link1, link2, link3, link4, link5, link6]
 
     return links
-

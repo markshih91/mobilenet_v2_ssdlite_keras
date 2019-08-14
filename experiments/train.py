@@ -43,11 +43,11 @@ return_predictor_sizes = False
 K.clear_session()
 
 # file paths
-train_images_dir = '/media/shishuai/C4742F9E742F926A/Resources/COCO/2017/train2017/'
-train_annotations_filename = '/media/shishuai/C4742F9E742F926A/Resources/COCO/2017/annotations/instances_train2017.json'
-val_images_dir = '/media/shishuai/C4742F9E742F926A/Resources/COCO/2017/val2017/'
-val_annotations_filename = '/media/shishuai/C4742F9E742F926A/Resources/COCO/2017/annotations/instances_val2017.json'
-log_dir = '/media/shishuai/C4742F9E742F926A/Resources/ssd_keras_logs/0320/'
+train_images_dir = '/media/shishuai/C4742F9E742F926A/Resources/Datasets/COCO/2017/train2017/'
+train_annotations_filename = '/media/shishuai/C4742F9E742F926A/Resources/Datasets/COCO/2017/annotations/instances_train2017.json'
+val_images_dir = '/media/shishuai/C4742F9E742F926A/Resources/Datasets/COCO/2017/val2017/'
+val_annotations_filename = '/media/shishuai/C4742F9E742F926A/Resources/Datasets/COCO/2017/annotations/instances_val2017.json'
+log_dir = '/media/shishuai/C4742F9E742F926A/Resources/Datasets/ssd_keras_logs/0320/'
 
 
 # learning rate schedule
